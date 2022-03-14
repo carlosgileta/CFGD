@@ -1,0 +1,511 @@
+html,body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+/* ----------------Inicio phone first------------------------- */
+@media screen and (min-width: 320px) and (max-width: 788px)  {
+/* -------------------colores------------- */
+    :root{
+        --color-neutro: rgb(228, 233, 238);
+        --color-principal: rgb(48,74,110);
+        --color-secundario: rgb(102,141,192);
+        --color-oscuro: rgb(15,28,48);
+        --color-claro: rgb(235, 233, 241);
+    /* -----------espacios---------------- */
+        --1rem: 1rem;
+        --2rem: 2rem;
+        --5rem: 5rem;
+        }
+
+   .body{
+       background-color: var(--color-claro);
+       margin-top: 60px;
+
+   } 
+   .wrapper{
+      margin-top: 100px;
+   }
+   .header{
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-neutro);
+  
+}
+.header nav{
+    margin: 0;
+}
+.header-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: inherit;
+
+}
+.nombre{
+  font-family: 'Roboto Mono', monospace;
+      color: var(--color-principal);
+    font-size: 25px;
+     padding: 0px 0 0px 45px; 
+  
+}
+.nav{
+    padding: 45px 45px 45px 0;
+}
+
+.nav a{
+    text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+    color: var(--color-principal);
+    font-size: 15px;
+}
+
+.nav ul{
+    list-style: none;
+    
+}
+.nav ul li a:hover{
+    background-color: var(--color-claro);
+    color: var(--color-neutro);
+}
+main{
+    display: grid;
+    grid-template-columns: auto;
+
+}
+main >*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main >div:nth-child(1){
+    height: 100%;
+    width: 100%;
+    padding: 0 25px;
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+.presentacion p{
+    padding: 0 16px;
+}
+.presentacion h1{
+    font-family: 'Roboto Mono', monospace;
+    color: var(--color-principal);
+}
+main >div:nth-child(2){
+    height:100%;
+    width: 100%;
+}
+
+.ht li {  
+    font-family: 'Roboto Mono', monospace;
+    list-style: circle;
+
+}
+
+main >div:nth-child(3){ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  
+    width: 100%;     
+   
+}
+
+
+.hb li {  
+    font-family: 'Roboto Mono', monospace;
+    list-style: circle;
+    
+}
+.hb ul{
+
+    
+}
+
+main >div:nth-child(4){
+    height: 100%;
+    margin-top: 10px;
+}
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.proyectos img{
+    width: 166px;
+}
+.proyectos p{
+    font-family: 'Roboto Mono', monospace;
+}
+main >div:nth-child(5){
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+.img-what, .img-link{
+    width: 35px;
+}
+
+
+
+    
+}
+/* ---------------------fin phone first-------------------------------- */
+/* --------------------------middle------------------------------------------ */
+@media screen and (min-width: 789px) and (max-width: 1405px)  {
+    /* -------------------colores------------- */
+        :root{
+            --color-neutro: rgb(228, 233, 238);
+            --color-principal: rgb(48,74,110);
+            --color-secundario: rgb(102,141,192);
+            --color-oscuro: rgb(15,28,48);
+            --color-claro: rgb(235, 233, 241);
+        /* -----------espacios---------------- */
+            --1rem: 1rem;
+            --2rem: 2rem;
+            --5rem: 5rem;
+            }
+    
+       .body{
+           background-color: var(--color-claro);
+           margin-top: 60px;
+    
+       } 
+       .wrapper{
+          margin-top: 100px;
+       }
+       .header{
+        position:fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: var(--color-neutro);
+      
+    }
+    .header nav{
+        margin: 0;
+    }
+    .header-container{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        height: inherit;
+    
+    }
+    .nombre{
+      font-family: 'Roboto Mono', monospace;
+          color: var(--color-principal);
+        font-size: 45px;
+         padding: 0px 0 0px 45px; 
+      
+    }
+   
+    .nav a{
+            
+        text-decoration: none;
+      font-family: 'Roboto Mono', monospace;
+        color: var(--color-principal);
+        font-size: 25px;
+    }
+    
+    .nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        gap: 20px;
+        
+    }
+    .nav ul li a:hover{
+        background-color: var(--color-claro);
+        color: var(--color-neutro);
+    }
+    main{
+        display: grid;
+        grid-template-columns: auto;
+    
+    }
+     main >*{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    } 
+    main >div:nth-child(1){
+        height: 100%;
+        width: 100%;
+        padding: 0 25px;
+    }
+    
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 25px;
+        
+    }
+    .presentacion p{
+        padding: 0 16px;
+    }
+    .presentacion h1{
+        font-family: 'Roboto Mono', monospace;
+        color: var(--color-principal);
+    }
+    main >div:nth-child(2){
+        justify-content: space-evenly;
+        height:100%;
+        width: 100%;
+    }
+    .ht {
+        display: flex;
+        
+    }
+    .ht li {  
+        font-family: 'Roboto Mono', monospace;
+        list-style: circle;
+        font-size: 25px;
+    }
+    
+    main >div:nth-child(3){ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;  
+        width: 100%;     
+       
+    }
+    
+    
+    .hb li {  
+        font-family: 'Roboto Mono', monospace;
+        list-style: circle;
+        font-size: 25px;
+        
+    }
+    
+    main >div:nth-child(4){
+        height: 100%;
+        margin-top: 10px;
+    }
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .proyectos img{
+        width: 50%;
+    }
+    .proyectos p{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 25px;
+    }
+    main >div:nth-child(5){
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 25px;
+    }
+    .img-what, .img-link{
+        width: 35px;
+    }
+    
+    
+    
+        
+    }
+/* ----------------------------fin middle----------------------------------- */
+@media screen and (min-width: 1406px) {
+      /* -------------------colores------------- */
+      :root{
+        --color-neutro: rgb(228, 233, 238);
+        --color-principal: rgb(48,74,110);
+        --color-secundario: rgb(102,141,192);
+        --color-oscuro: rgb(15,28,48);
+        --color-claro: rgb(235, 233, 241);
+    /* -----------espacios---------------- */
+        --1rem: 1rem;
+        --2rem: 2rem;
+        --5rem: 5rem;
+        }
+
+   .body{
+       background-color: var(--color-claro);
+       margin-top: 60px;
+
+   } 
+   .wrapper{
+      margin-top: 100px;
+   }
+   .header{
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-neutro);
+  
+}
+.header nav{
+    margin: 0;
+}
+.header-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: inherit;
+
+}
+.nombre{
+  font-family: 'Roboto Mono', monospace;
+      color: var(--color-principal);
+    font-size: 45px;
+     padding: 0px 0 0px 45px; 
+  
+}
+
+.nav a{
+        
+    text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+    color: var(--color-principal);
+    font-size: 25px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 45px;
+    
+}
+.nav ul li a:hover{
+    background-color: rgb(48,74,110);
+    color: rgb(235, 233, 241);
+}
+main{
+    display: grid;
+    grid-template-columns: auto;
+
+}
+ main >*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+main >div:nth-child(1){
+    height: 100%;
+    width: 100%;
+    padding: 0 25px;
+    
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 35px;
+    
+}
+.presentacion p{
+    padding: 0 16px;
+}
+.presentacion h1{
+    font-family: 'Roboto Mono', monospace;
+    color: var(--color-principal);
+}
+main >div:nth-child(2){
+    justify-content: space-evenly;
+    height:100%;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.ht li {  
+    font-family: 'Roboto Mono', monospace;
+    list-style: circle;
+    font-size: 35px;
+}
+
+main >div:nth-child(3){ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  
+    width: 100%;     
+    margin-top: 2%;
+}
+
+
+.hb li {  
+    font-family: 'Roboto Mono', monospace;
+    list-style: circle;
+    font-size: 35px;
+    
+}
+
+main >div:nth-child(4){
+    height: 100%;
+    margin-top: 10px;
+    margin-top: 2%;
+}
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.proyectos img{
+    width: 50%;
+}
+.proyectos p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 35px;
+}
+main >div:nth-child(5){
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 45px;
+    margin-top: 2%;
+    border-top: 1px solid rgb(15,28,48);
+}
+.img-what, .img-link{
+    width: 35px;
+}
+
+
+
+   
+        }  
+
+
