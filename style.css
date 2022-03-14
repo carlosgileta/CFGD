@@ -97,6 +97,7 @@ main >div:nth-child(1){
 .presentacion{
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family: 'Roboto Mono', monospace;
     
 }
@@ -106,6 +107,10 @@ main >div:nth-child(1){
 .presentacion h1{
     font-family: 'Roboto Mono', monospace;
     color: var(--color-principal);
+}
+.imagenCarlos{
+    margin-top: 15px;
+    width: 35%;
 }
 main >div:nth-child(2){
     height:100%;
@@ -257,13 +262,17 @@ main >div:nth-child(5){
         width: 100%;
         padding: 0 25px;
     }
-    
+  
     .presentacion{
         display: flex;
         flex-direction: column;
         font-family: 'Roboto Mono', monospace;
         font-size: 25px;
         
+    }
+    .imagenCarlos{
+        margin-top: 15px;
+        width: 35%;
     }
     .presentacion p{
         padding: 0 16px;
@@ -430,16 +439,20 @@ main >div:nth-child(1){
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Mono', monospace;
-    font-size: 35px;
-    
+    font-size: 35px; 
 }
-.presentacion p{
-    padding: 0 16px;
+
+
+
+.imagenCarlos{
+    margin-top: 15px;
+    width: 35%;
 }
 .presentacion h1{
     font-family: 'Roboto Mono', monospace;
     color: var(--color-principal);
 }
+
 main >div:nth-child(2){
     justify-content: space-evenly;
     height:100%;
@@ -500,9 +513,8 @@ main >div:nth-child(5){
     border-top: 1px solid rgb(15,28,48);
 }
 .img-what, .img-link{
-    width: 35px;
+    width: 35%;
 }
-
 
 
    
