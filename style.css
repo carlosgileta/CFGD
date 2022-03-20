@@ -23,8 +23,11 @@ html,body{
         --5rem: 5rem;
         }
 
+        p{
+            color: grey;
+         }
    .body{
-       background-color: var(--color-claro);
+       background-color: var(--color-oscuro);
        margin-top: 60px;
 
    } 
@@ -111,14 +114,17 @@ main >div:nth-child(1){
 }
 .presentacion h1{
     font-family: 'Roboto Mono', monospace;
-    color: var(--color-principal);
+    color: rgb(38, 148, 111);
 }
 .imagenCarlos{
     margin-top: 15px;
     width: 35%;
     box-shadow: 0 0 15px rgb(110, 105, 105);
-    border-radius: 6px;
+  border-radius: 6px;
 }
+.imagenCarlos:hover{
+    box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+   }
 main >div:nth-child(2){
     height:100%;
     width: 100%;
@@ -127,7 +133,7 @@ main >div:nth-child(2){
 .ht li {  
     font-family: 'Roboto Mono', monospace;
     list-style: circle;
-
+    color: grey;
 }
 
 main >div:nth-child(3){ 
@@ -144,7 +150,7 @@ main >div:nth-child(3){
 .hb li {  
     font-family: 'Roboto Mono', monospace;
     list-style: circle;
-    
+    color: grey;
 }
 .hb ul{
 
@@ -163,7 +169,14 @@ main >div:nth-child(4){
 }
 .proyectos img{
     width: 166px;
+    box-shadow: 0 0 15px rgb(110, 105, 105);
+  border-radius: 6px;
+  transition: 3px;
 }
+.img:hover{
+    transform: translateY(15px);
+  box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+ }
 .proyectos p{
     font-family: 'Roboto Mono', monospace;
 }
@@ -183,6 +196,18 @@ main >div:nth-child(5){
     display: flex; 
     flex-direction: column;   
  }
+ .contBotonWhat:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0,0,0,0.5);
+  }
+  .contBotonLin:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0,0,0,0.5);
+  }
+  .contCurri:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0,0,0,0.5);
+  }
  .boton-wath{
    width: 100%;
    background: transparent;
@@ -220,8 +245,8 @@ main >div:nth-child(5){
    color: white;
 }
 .correo{
-   font-size: 25px;
-   color: var(--color-principal);
+   font-size: 15px;
+   color: gray;
 }  
 .correo:hover{
     color: var(--color-secundario);
@@ -244,9 +269,12 @@ main >div:nth-child(5){
             --2rem: 2rem;
             --5rem: 5rem;
             }
+            p{
+                color: grey;
+             }    
     
        .body{
-           background-color: var(--color-claro);
+           background-color: var(--color-oscuro);
            margin-top: 60px;
     
        } 
@@ -300,7 +328,8 @@ main >div:nth-child(5){
         background: transparent;
         border: none;
         color: var(--color-principal);
-        font-size: 140%;
+        font-size: 75%;
+        
     }
     .botonNav:hover{
         background-color: rgb(190, 214, 211);
@@ -336,12 +365,15 @@ main >div:nth-child(5){
         box-shadow: 0 0 15px rgb(110, 105, 105);
         border-radius: 6px;
     }
-    .presentacion p{
+    .imagenCarlos:hover{
+        box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+       }
+    /* .presentacion p{
         padding: 0 16px;
-    }
+    } */
     .presentacion h1{
         font-family: 'Roboto Mono', monospace;
-        color: var(--color-principal);
+        color: rgb(38, 148, 111);
     }
     main >div:nth-child(2){
         justify-content: space-evenly;
@@ -356,6 +388,7 @@ main >div:nth-child(5){
         font-family: 'Roboto Mono', monospace;
         list-style: circle;
         font-size: 25px;
+        color: grey;
     }
     
     main >div:nth-child(3){ 
@@ -373,6 +406,7 @@ main >div:nth-child(5){
         font-family: 'Roboto Mono', monospace;
         list-style: circle;
         font-size: 25px;
+        color: grey;
         
     }
     
@@ -390,7 +424,12 @@ main >div:nth-child(5){
         width: 50%;
         box-shadow: 0 0 15px rgb(110, 105, 105);
         border-radius: 6px;
+        transition: 3px;
     }
+    .img:hover{
+        transform: translateY(15px);
+      box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+     }
     .proyectos p{
         font-family: 'Roboto Mono', monospace;
         font-size: 25px;
@@ -402,6 +441,8 @@ main >div:nth-child(5){
         height: 100%;
         font-family: 'Roboto Mono', monospace;
         font-size: 25px;
+        margin-top: 2%;
+        border-top: 1px solid rgb(15,28,48);
     }
     .img-what, .img-link{
         width: 35px;
@@ -411,6 +452,18 @@ main >div:nth-child(5){
         display: flex; 
         flex-direction: column;   
      }
+     .contBotonWhat:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgb(0,0,0,0.5);
+      }
+      .contBotonLin:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgb(0,0,0,0.5);
+      }
+      .contCurri:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgb(0,0,0,0.5);
+      }
      .boton-wath{
        width: 100%;
        background: transparent;
@@ -449,10 +502,12 @@ main >div:nth-child(5){
     }
     .correo{
        font-size: 25px;
-    
+       color: gray;
        
-    }  
-    
+    }   
+     .correo:hover{
+         color: var(--color-secundario);
+     }
         
     }
 /* ----------------------------fin middle----------------------------------- */
@@ -469,9 +524,11 @@ main >div:nth-child(5){
         --2rem: 2rem;
         --5rem: 5rem;
         }
-
+ p{
+     color: grey;
+ }
    .body{
-       background-color: var(--color-claro);
+       background-color: var(--color-oscuro);
        margin-top: 60px;
 
    } 
@@ -560,14 +617,18 @@ main >div:nth-child(1){
 
 .imagenCarlos{
     margin-top: 15px;
-    width: 35%;
+    width: 25%;
     box-shadow: 0 0 15px rgb(110, 105, 105);
     border-radius: 6px;
-
+    /* transition: width 2s, height 4s; */
+}
+.imagenCarlos:hover{
+   box-shadow: 0 12px 16px rgb(0,0,0,0.2);
 }
 .presentacion h1{
     font-family: 'Roboto Mono', monospace;
-    color: var(--color-principal);
+    /* color: var(--color-principal); */
+    color: rgb(38, 148, 111);
 }
 
 main >div:nth-child(2){
@@ -581,6 +642,7 @@ main >div:nth-child(2){
     font-family: 'Roboto Mono', monospace;
     list-style: circle;
     font-size: 35px;
+    color: grey;
 }
 
 main >div:nth-child(3){ 
@@ -598,7 +660,7 @@ main >div:nth-child(3){
     font-family: 'Roboto Mono', monospace;
     list-style: circle;
     font-size: 35px;
-    
+    color: grey;
 }
 
 main >div:nth-child(4){
@@ -616,8 +678,12 @@ main >div:nth-child(4){
     width: 50%;
     box-shadow: 0 0 15px rgb(110, 105, 105);
     border-radius: 6px;
+    transition: 3px;
 }
-
+.img:hover{
+     transform: translateY(15px);
+   box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+}
 .proyectos p{
     font-family: 'Roboto Mono', monospace;
     font-size: 35px;
@@ -639,6 +705,19 @@ main >div:nth-child(5){
 .contBotonWhat, .contBotonLin, .contCurri{
     display: flex; 
     flex-direction: column;   
+    
+ }
+ .contBotonWhat:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0,0,0,0.5);
+ }
+ .contBotonLin:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0,0,0,0.5);
+ }
+ .contCurri:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0,0,0,0.5);
  }
  .boton-wath{
    width: 100%;
@@ -664,6 +743,7 @@ main >div:nth-child(5){
      color: blue;
  }
  .cpl:hover{
+    
    color: white;
 }
 .boton-Curri{
@@ -678,8 +758,9 @@ main >div:nth-child(5){
 }
 .correo{
    font-size: 25px;
-
-   
+   color: gray;
 }  
-
-
+  .correo:hover{
+      color: var(--color-secundario);
+  }
+} 
